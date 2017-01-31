@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'all_states' => 'country#all_states'
+
+  get 'top_pop' => 'country#top_five_pop'
+
+  get 'top_area' => 'country#top_five_area'
+
   get 'products' => 'inventory#all_products'
 
   get 'product' => 'inventory#one_product'

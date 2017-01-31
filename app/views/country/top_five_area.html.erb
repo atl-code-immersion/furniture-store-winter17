@@ -1,0 +1,25 @@
+<h1>States: Top Five in Area</h1>
+
+<table>
+	<tr>
+		<th>State</th>
+		<th>Capital</th>
+		<th>Population (in mil.)</th>
+		<th>Area (sq. mi.)</th>
+	</tr>
+	<% @states.each do |state| %>
+		<tr>
+			<td><%= state.name %></td>
+			<td><%= state.capital %></td>
+			<td><%= state.population %></td>
+			<td><%= state.area %></td>
+		</tr>
+	<% end %>
+</table>
+
+<p>
+	<%= link_to "All States", all_states_path %>
+</p>
+<p>
+	<%= link_to "Top 5 By Population", top_pop_path %>
+</p>
